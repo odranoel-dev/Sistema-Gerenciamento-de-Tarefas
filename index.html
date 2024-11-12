@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gerenciamento de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Gerenciamento de Tarefas</h1>
+    </header>
+
+    <section id="adicionar-tarefa">
+        <h2>Adicionar Nova Tarefa</h2>
+        <form id="formTarefa">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" name="titulo" required>
+
+            <label for="descricao">Descrição</label>
+            <input type="text" id="descricao" name="descricao" required>
+
+            <label for="prazo">Prazo</label>
+            <input type="date" id="prazo" name="prazo" required>
+
+            <button type="submit">Adicionar Tarefa</button>
+        </form>
+    </section>
+
+    <section id="tarefas">
+        <h2>Tarefas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Descrição</th>
+                    <th>Prazo</th>
+                    <th>Concluída</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As tarefas serão inseridas aqui dinamicamente -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
